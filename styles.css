@@ -1,12 +1,16 @@
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+.image-container {
+    display: flex;
+    flex-wrap: nowrap;  /* Ensures images stay in one line */
+    gap: 10px;  /* Adds space between images */
 }
 
 img {
   border: 0.1em solid var(--secondary);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: content-box;
 }
 
 /**
@@ -102,53 +106,6 @@ img {
   background-color: var(--primary);
   border: 2px solid var(--secondary);
   border-right: none;
-}
-
-::-webkit-scrollbar-button:horizontal:start:decrement,
-::-webkit-scrollbar-button:horizontal:end:increment,
-::-webkit-scrollbar-button:vertical:start:decrement,
-::-webkit-scrollbar-button:vertical:end:increment {
-  display: block;
-}
-
-::-webkit-scrollbar-button:vertical:start {
-  background-repeat: no-repeat;
-  height: 0px;
-  background-image: svg-load("/icon/scrollbar-up.svg");
-}
-::-webkit-scrollbar-button:vertical:start:active {
-  background-repeat: no-repeat;
-  height: 23.38px;
-  background-image: svg-load("/icon/scrollbar-up-active.svg");
-}
-::-webkit-scrollbar-button:vertical:end {
-  height: 0px;
-  background-image: svg-load("/icon/scrollbar-down.svg");
-}
-::-webkit-scrollbar-button:vertical:end:active {
-  background-repeat: no-repeat;
-  height: 23.38px;
-  background-image: svg-load("/icon/scrollbar-down-active.svg");
-}
-
-::-webkit-scrollbar-button:horizontal:start {
-  background-repeat: no-repeat;
-  height: 23.38px;
-  background-image: svg-load("/icon/scrollbar-left.svg");
-}
-::-webkit-scrollbar-button:horizontal:start:active {
-  background-repeat: no-repeat;
-  height: 23.38px;
-  background-image: svg-load("/icon/scrollbar-left-active.svg");
-}
-::-webkit-scrollbar-button:horizontal:end {
-  height: 23.38px;
-  background-image: svg-load("/icon/scrollbar-right.svg");
-}
-::-webkit-scrollbar-button:horizontal:end:active {
-  background-repeat: no-repeat;
-  height: 23.38px;
-  background-image: svg-load("/icon/scrollbar-right-active.svg");
 }
 
 body {
