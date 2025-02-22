@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="title-bar">
+            <h1 class="title">My Website</h1>
+        </div>
+        <div>
+            <nav class="menu">
+                <ul role="menu-bar">
+                  <li role="menu-item" tabindex="0" aria-haspopup="false"><a href="index.html">Home</li>
+                  <li role="menu-item" tabindex="0" aria-haspopup="false"><a href="about.html">About</a></li>
+                    <li role="menu-item" tabindex="0" aria-haspopup="true">
+                        Gallery
+                        <ul role="menu">
+                          <li role="menu-item"><a href="#menu">Action</a></li>
+                          <li role="menu-item"><a href="#menu">Another Action</a></li>
+                          <li role="menu-item" class="divider"><a href="#menu">Something else here</a></li>
+                          <li role="menu-item"><a href="https://twitter.com/sakofchit">sakun's twitter</a></li>
+                        </ul>
+                      </li>
+                    <li role="menu-item" tabindex="0" aria-haspopup="false"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+
+    <div class="window" style="width:device-width;">
+        <div class="title-bar">
+            <button aria-label="Close" class="close"></button>
+            <h1 class="title">Welcome</h1>
+            <button aria-label="Resize" class="resize"></button>
+        </div>
+        <div class="separator"></div>
+
+        <div class="window-pane">
+            <h2>Hello, I'm Jane Doe!</h2>
+            <p>I'm a web developer passionate about building cool projects.</p>
+            <p>Feel free to explore my work and get in touch!</p>
+        </div>
+    </div>
+
+    <footer class="window">
+        <div class="window-pane">
+            <p>
+                Follow me: 
+                <a href="#">Twitter</a> | 
+                <a href="#">LinkedIn</a> | 
+                <a href="#">GitHub</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
